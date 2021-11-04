@@ -60,7 +60,7 @@ namespace AppCronogramaAula.Controller
 
 
         }
-        /*
+        
         public void visuCodigoAluno()
         {
 
@@ -141,12 +141,12 @@ namespace AppCronogramaAula.Controller
 
                 conexao.Open();
                 comandos.ExecuteNonQuery();
-                MessageBox.Show("Funcionário Alterado com sucesso!");
+                MessageBox.Show("Aluno Alterado com sucesso!");
                 Aluno.Retorno = "True";
             }
             catch
             {
-                MessageBox.Show("Funcionário não alterado.");
+                MessageBox.Show("Aluno não alterado.");
                 Aluno.Retorno = "False";
             }
             finally
@@ -170,12 +170,12 @@ namespace AppCronogramaAula.Controller
                 conexao.Open();
                 comandos.ExecuteNonQuery();
                 Aluno.Retorno = "True";
-                MessageBox.Show("Funcionário Excluido com sucesso!");
+                MessageBox.Show("Aluno Excluido com sucesso!");
 
             }
             catch
             {
-                MessageBox.Show("Funcionário não Excluido.");
+                MessageBox.Show("Aluno não Excluido.");
                 Aluno.Retorno = "False";
             }
             finally
@@ -186,6 +186,5 @@ namespace AppCronogramaAula.Controller
                 }
             }
         }
-        */
     }
 }
