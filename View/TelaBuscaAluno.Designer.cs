@@ -37,13 +37,13 @@ namespace AppCronogramaAula.View
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonPesqNomAlu = new System.Windows.Forms.Button();
-            this.textBoxPesq = new System.Windows.Forms.TextBox();
+            this.textBoxPesqNome = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.buttonExcAlu = new System.Windows.Forms.Button();
-            this.buttonAltAlu = new System.Windows.Forms.Button();
+            this.buttonAlterar = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -74,7 +74,7 @@ namespace AppCronogramaAula.View
             // 
             this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Controls.Add(this.buttonPesqNomAlu);
-            this.tabPage2.Controls.Add(this.textBoxPesq);
+            this.tabPage2.Controls.Add(this.textBoxPesqNome);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
@@ -132,13 +132,14 @@ namespace AppCronogramaAula.View
             this.buttonPesqNomAlu.TabIndex = 6;
             this.buttonPesqNomAlu.Text = "Pesquisar";
             this.buttonPesqNomAlu.UseVisualStyleBackColor = false;
+            this.buttonPesqNomAlu.Click += new System.EventHandler(this.buttonPesqNomAlu_Click);
             // 
-            // textBoxPesq
+            // textBoxPesqNome
             // 
-            this.textBoxPesq.Location = new System.Drawing.Point(177, 33);
-            this.textBoxPesq.Name = "textBoxPesq";
-            this.textBoxPesq.Size = new System.Drawing.Size(251, 23);
-            this.textBoxPesq.TabIndex = 5;
+            this.textBoxPesqNome.Location = new System.Drawing.Point(177, 33);
+            this.textBoxPesqNome.Name = "textBoxPesqNome";
+            this.textBoxPesqNome.Size = new System.Drawing.Size(251, 23);
+            this.textBoxPesqNome.TabIndex = 5;
             // 
             // label7
             // 
@@ -155,7 +156,7 @@ namespace AppCronogramaAula.View
             this.tabPage1.Controls.Add(this.textBox2);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.buttonExcAlu);
-            this.tabPage1.Controls.Add(this.buttonAltAlu);
+            this.tabPage1.Controls.Add(this.buttonAlterar);
             this.tabPage1.Controls.Add(this.textBox5);
             this.tabPage1.Controls.Add(this.textBox4);
             this.tabPage1.Controls.Add(this.textBox3);
@@ -177,6 +178,7 @@ namespace AppCronogramaAula.View
             // 
             this.textBox2.Location = new System.Drawing.Point(168, 71);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(100, 23);
             this.textBox2.TabIndex = 16;
             // 
@@ -202,16 +204,17 @@ namespace AppCronogramaAula.View
             this.buttonExcAlu.UseVisualStyleBackColor = false;
             this.buttonExcAlu.Click += new System.EventHandler(this.buttonExcAlu_Click);
             // 
-            // buttonAltAlu
+            // buttonAlterar
             // 
-            this.buttonAltAlu.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.buttonAltAlu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAltAlu.Location = new System.Drawing.Point(311, 219);
-            this.buttonAltAlu.Name = "buttonAltAlu";
-            this.buttonAltAlu.Size = new System.Drawing.Size(75, 23);
-            this.buttonAltAlu.TabIndex = 13;
-            this.buttonAltAlu.Text = "Alterar";
-            this.buttonAltAlu.UseVisualStyleBackColor = false;
+            this.buttonAlterar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.buttonAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAlterar.Location = new System.Drawing.Point(311, 219);
+            this.buttonAlterar.Name = "buttonAlterar";
+            this.buttonAlterar.Size = new System.Drawing.Size(75, 23);
+            this.buttonAlterar.TabIndex = 13;
+            this.buttonAlterar.Text = "Alterar";
+            this.buttonAlterar.UseVisualStyleBackColor = false;
+            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
             // 
             // textBox5
             // 
@@ -337,7 +340,7 @@ namespace AppCronogramaAula.View
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonExcAlu;
-        private System.Windows.Forms.Button buttonAltAlu;
+        private System.Windows.Forms.Button buttonAlterar;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
@@ -347,7 +350,7 @@ namespace AppCronogramaAula.View
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button buttonPesqNomAlu;
-        private System.Windows.Forms.TextBox textBoxPesq;
+        private System.Windows.Forms.TextBox textBoxPesqNome;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
