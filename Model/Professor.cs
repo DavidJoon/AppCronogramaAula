@@ -17,5 +17,6 @@ namespace AppCronogramaAula.Model
         public static string NomeProf { get => nomeProf; set => nomeProf = value; }
         public static string EmailProf { get => emailProf; set => emailProf = value; }
         public static string FoneProf { get => foneProf; set => foneProf = value; }
+        public static string Retorno { get; internal set; }
     }
 }

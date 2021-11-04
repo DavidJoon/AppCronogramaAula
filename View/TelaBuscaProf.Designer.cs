@@ -1,7 +1,7 @@
 ﻿
 namespace AppCronogramaAula.View
 {
-    partial class TelaBuscaAluno
+    partial class TelaBuscaProf
     {
         /// <summary>
         /// Required designer variable.
@@ -29,20 +29,21 @@ namespace AppCronogramaAula.View
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonPesqNomAlu = new System.Windows.Forms.Button();
+            this.buttonPesqNomPro = new System.Windows.Forms.Button();
             this.textBoxPesqNome = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.buttonExcAlu = new System.Windows.Forms.Button();
+            this.buttonExcPro = new System.Windows.Forms.Button();
             this.buttonAlterar = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -50,30 +51,29 @@ namespace AppCronogramaAula.View
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.buttonPesqCodAlu = new System.Windows.Forms.Button();
+            this.buttonPesqCodPro = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // label1
             // 
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(95, 60);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(528, 300);
-            this.tabControl1.TabIndex = 0;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(211, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(316, 21);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Gerenciamento de Dados dos Professores";
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.dataGridView1);
-            this.tabPage2.Controls.Add(this.buttonPesqNomAlu);
+            this.tabPage2.Controls.Add(this.buttonPesqNomPro);
             this.tabPage2.Controls.Add(this.textBoxPesqNome);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
@@ -123,40 +123,50 @@ namespace AppCronogramaAula.View
             this.fone.Name = "fone";
             this.fone.Width = 80;
             // 
-            // buttonPesqNomAlu
+            // buttonPesqNomPro
             // 
-            this.buttonPesqNomAlu.BackColor = System.Drawing.Color.Orange;
-            this.buttonPesqNomAlu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPesqNomAlu.Location = new System.Drawing.Point(434, 33);
-            this.buttonPesqNomAlu.Name = "buttonPesqNomAlu";
-            this.buttonPesqNomAlu.Size = new System.Drawing.Size(75, 23);
-            this.buttonPesqNomAlu.TabIndex = 6;
-            this.buttonPesqNomAlu.Text = "Pesquisar";
-            this.buttonPesqNomAlu.UseVisualStyleBackColor = false;
-            this.buttonPesqNomAlu.Click += new System.EventHandler(this.buttonPesqNomAlu_Click);
+            this.buttonPesqNomPro.BackColor = System.Drawing.Color.Orange;
+            this.buttonPesqNomPro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPesqNomPro.Location = new System.Drawing.Point(434, 33);
+            this.buttonPesqNomPro.Name = "buttonPesqNomPro";
+            this.buttonPesqNomPro.Size = new System.Drawing.Size(75, 23);
+            this.buttonPesqNomPro.TabIndex = 6;
+            this.buttonPesqNomPro.Text = "Pesquisar";
+            this.buttonPesqNomPro.UseVisualStyleBackColor = false;
+            this.buttonPesqNomPro.Click += new System.EventHandler(this.buttonPesqNomPro_Click);
             // 
             // textBoxPesqNome
             // 
-            this.textBoxPesqNome.Location = new System.Drawing.Point(177, 33);
+            this.textBoxPesqNome.Location = new System.Drawing.Point(202, 34);
             this.textBoxPesqNome.Name = "textBoxPesqNome";
-            this.textBoxPesqNome.Size = new System.Drawing.Size(251, 23);
+            this.textBoxPesqNome.Size = new System.Drawing.Size(225, 23);
             this.textBoxPesqNome.TabIndex = 5;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(6, 33);
+            this.label7.Location = new System.Drawing.Point(9, 36);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(165, 19);
+            this.label7.Size = new System.Drawing.Size(187, 19);
             this.label7.TabIndex = 4;
-            this.label7.Text = "Digite o Nome do Aluno:";
+            this.label7.Text = "Digite o Nome do Professor:";
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Location = new System.Drawing.Point(90, 54);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(528, 300);
+            this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.textBox2);
             this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.buttonExcAlu);
+            this.tabPage1.Controls.Add(this.buttonExcPro);
             this.tabPage1.Controls.Add(this.buttonAlterar);
             this.tabPage1.Controls.Add(this.textBox5);
             this.tabPage1.Controls.Add(this.textBox4);
@@ -164,7 +174,7 @@ namespace AppCronogramaAula.View
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.buttonPesqCodAlu);
+            this.tabPage1.Controls.Add(this.buttonPesqCodPro);
             this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
@@ -187,23 +197,23 @@ namespace AppCronogramaAula.View
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(108, 71);
+            this.label6.Location = new System.Drawing.Point(111, 74);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 17);
             this.label6.TabIndex = 15;
             this.label6.Text = "Código:";
             // 
-            // buttonExcAlu
+            // buttonExcPro
             // 
-            this.buttonExcAlu.BackColor = System.Drawing.Color.Brown;
-            this.buttonExcAlu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExcAlu.Location = new System.Drawing.Point(407, 218);
-            this.buttonExcAlu.Name = "buttonExcAlu";
-            this.buttonExcAlu.Size = new System.Drawing.Size(75, 23);
-            this.buttonExcAlu.TabIndex = 14;
-            this.buttonExcAlu.Text = "Excluir";
-            this.buttonExcAlu.UseVisualStyleBackColor = false;
-            this.buttonExcAlu.Click += new System.EventHandler(this.buttonExcAlu_Click);
+            this.buttonExcPro.BackColor = System.Drawing.Color.Brown;
+            this.buttonExcPro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExcPro.Location = new System.Drawing.Point(407, 218);
+            this.buttonExcPro.Name = "buttonExcPro";
+            this.buttonExcPro.Size = new System.Drawing.Size(75, 23);
+            this.buttonExcPro.TabIndex = 14;
+            this.buttonExcPro.Text = "Excluir";
+            this.buttonExcPro.UseVisualStyleBackColor = false;
+            this.buttonExcPro.Click += new System.EventHandler(this.buttonExcPro_Click);
             // 
             // buttonAlterar
             // 
@@ -242,7 +252,7 @@ namespace AppCronogramaAula.View
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(58, 219);
+            this.label4.Location = new System.Drawing.Point(61, 222);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 17);
             this.label4.TabIndex = 9;
@@ -252,7 +262,7 @@ namespace AppCronogramaAula.View
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(51, 172);
+            this.label3.Location = new System.Drawing.Point(54, 175);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 17);
             this.label3.TabIndex = 8;
@@ -262,23 +272,23 @@ namespace AppCronogramaAula.View
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(51, 125);
+            this.label5.Location = new System.Drawing.Point(54, 128);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 17);
             this.label5.TabIndex = 7;
             this.label5.Text = "Nome:";
             // 
-            // buttonPesqCodAlu
+            // buttonPesqCodPro
             // 
-            this.buttonPesqCodAlu.BackColor = System.Drawing.Color.Orange;
-            this.buttonPesqCodAlu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPesqCodAlu.Location = new System.Drawing.Point(311, 25);
-            this.buttonPesqCodAlu.Name = "buttonPesqCodAlu";
-            this.buttonPesqCodAlu.Size = new System.Drawing.Size(75, 23);
-            this.buttonPesqCodAlu.TabIndex = 3;
-            this.buttonPesqCodAlu.Text = "Pesquisar";
-            this.buttonPesqCodAlu.UseVisualStyleBackColor = false;
-            this.buttonPesqCodAlu.Click += new System.EventHandler(this.buttonPesqCodAlu_Click);
+            this.buttonPesqCodPro.BackColor = System.Drawing.Color.Orange;
+            this.buttonPesqCodPro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPesqCodPro.Location = new System.Drawing.Point(311, 25);
+            this.buttonPesqCodPro.Name = "buttonPesqCodPro";
+            this.buttonPesqCodPro.Size = new System.Drawing.Size(75, 23);
+            this.buttonPesqCodPro.TabIndex = 3;
+            this.buttonPesqCodPro.Text = "Pesquisar";
+            this.buttonPesqCodPro.UseVisualStyleBackColor = false;
+            this.buttonPesqCodPro.Click += new System.EventHandler(this.buttonPesqCodPro_Click);
             // 
             // textBox1
             // 
@@ -291,23 +301,13 @@ namespace AppCronogramaAula.View
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(51, 25);
+            this.label2.Location = new System.Drawing.Point(54, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Digite o Código:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(216, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(280, 21);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Gerenciamento de Dados dos Alunos";
-            // 
-            // TelaBuscaAluno
+            // TelaBuscaProf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -315,15 +315,14 @@ namespace AppCronogramaAula.View
             this.ClientSize = new System.Drawing.Size(709, 372);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
-            this.Name = "TelaBuscaAluno";
+            this.Name = "TelaBuscaProf";
             this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TelaBuscaAluno";
-            this.Load += new System.EventHandler(this.TelaBuscaAluno_Load);
-            this.tabControl1.ResumeLayout(false);
+            this.Text = "TelaBuscaProf";
+            this.Load += new System.EventHandler(this.TelaBuscaProf_Load);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
@@ -333,14 +332,21 @@ namespace AppCronogramaAula.View
 
         #endregion
 
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fone;
+        private System.Windows.Forms.Button buttonPesqNomPro;
+        private System.Windows.Forms.TextBox textBoxPesqNome;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Button buttonPesqCodAlu;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonExcAlu;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button buttonExcPro;
         private System.Windows.Forms.Button buttonAlterar;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
@@ -348,15 +354,8 @@ namespace AppCronogramaAula.View
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button buttonPesqNomAlu;
-        private System.Windows.Forms.TextBox textBoxPesqNome;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fone;
+        private System.Windows.Forms.Button buttonPesqCodPro;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
