@@ -19,5 +19,6 @@ namespace AppCronogramaAula.Model
         public static DateTime DataInicioTurma { get => dataInicioTurma; set => dataInicioTurma = value; }
         public static DateTime DataFimTurma { get => dataFimTurma; set => dataFimTurma = value; }
         public static string Periodo { get => periodo; set => periodo = value; }
+        public static string Retorno { get; internal set; }
     }
 }

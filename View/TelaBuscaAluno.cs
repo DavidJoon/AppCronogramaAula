@@ -72,9 +72,11 @@ namespace AppCronogramaAula.View
 
 
             Aluno.Codigo = Convert.ToInt32(textBox2.Text);
-
+            Aluno.NomeAluno = textBox3.Text;
+            Aluno.EmailAluno = textBox4.Text;
+            Aluno.FoneAluno = textBox5.Text;
             AlunoController alunoController = new AlunoController();
-            alunoController.deletarAluno();
+            alunoController.alterarAluno();
 
             limpaTudo();
 

@@ -317,6 +317,7 @@ namespace AppCronogramaAula.View
             this.Controls.Add(this.tabControl1);
             this.Name = "TelaBuscaProf";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaBuscaProf";
             this.Load += new System.EventHandler(this.TelaBuscaProf_Load);
             this.tabPage2.ResumeLayout(false);
